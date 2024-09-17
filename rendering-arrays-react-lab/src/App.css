@@ -1,42 +1,93 @@
-#root {
-  max-width: 1280px;
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: Black ;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.learner-container {
+  background-color: Gray ;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.learner-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 2rem;
+  color: Teal ;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.card {
-  padding: 2em;
+h3 {
+  font-size: 1.4rem;
+  color: #495057;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+}
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
 }
 
-.read-the-docs {
-  color: #888;
+.score-container:hover {
+  background-color: #e9ecef;
+}
+
+.score-container p {
+  margin: 0;
+  font-size: 1rem;
+  color: #495057;
+}
+
+.score-date {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

@@ -40,6 +40,8 @@ function App() {
 
   return (
     <div>
+    {/* <div className="app-container">
+     </div> */}
       <h1>Learner Data</h1>
       {learnerData.learners.map((learner, index) => (
         <Learner key={index} learner={learner} />
