@@ -1,7 +1,5 @@
 import Score from './Score.jsx';
 
-
-
 function Learner({ learner }) {
   return (
     <div>

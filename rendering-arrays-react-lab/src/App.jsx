@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Learner from './components/Learner.jsx';
-import Score from './components/Score.jsx';
 import './App.css'
 
 
